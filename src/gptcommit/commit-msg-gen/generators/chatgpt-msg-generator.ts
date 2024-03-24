@@ -30,7 +30,6 @@ const initMessagesPrompt: Array<ChatCompletionRequestMessage> = [
     3. Prefix commits messages with type (e.g., Feat, Fix) followed by optional scope in parentheses, this type must necessarily be the first syllable in capital, ! if breaking, and :.
     4. Scope describes code section (e.g., Fix:).
     5. Scope must never be a path or file name. It's usually a single word that represents a feature name.
-    6. An optional longer body after the description separated by a blank line is allowed, but only when the description is not enough to explain the changes. and this line must not have * in it, it must be completely empty.
     7. If the description/changes are trivial, simple or the description is short, do not write any body for the commit message, rely on the description only.
     8. Indicate breaking changes with ! in type/scope.
     9. Types other than feat and fix allowed (e.g., Docs:, Refatoração:, Style:, Test:, Tarefa:, ci:, perf:, build:).
